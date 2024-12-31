@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar-brand {
+            margin-left: 3%;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-link {
+            color: rgb(0, 255, 123);
+        }
+
+        .nav-link:hover {
+            color: aqua;
+        }
+
+        #btn1 {
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: rgb(77, 77, 77);
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        h5 {
+            margin-top: 40px;
+            color: rgb(77, 77, 77);
+            font-size: 25px;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #btn2 {
+            width: 190px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(46, 186, 46);
+            color: white;
+            border-color: white;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h5 {
+                font-size: 20px;
+            }
+
+            #btn2 {
+                width: 150px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(162, 255, 0, 0.289); position: relative;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color:darkgreen;"><b>Xylem</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ABOUT">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">CONTACT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            COURSE DETAILS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#course">ME(A)RN stack</a></li>
+                            <li><a class="dropdown-item" href="#course">DATA science</a></li>
+                            <li><a class="dropdown-item" href="#course">python FULL STACK</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mt-1"><input type="text" placeholder="search" style="border-radius: 5px;">
+                    </li>
+                    <li class="nav-item mt-1" style="margin-left: 5px;">
+                        <button id="btn1"><a href=""
+                                style="text-decoration: none; color: rgb(255, 0, 0);">SEARCH</a></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home page -->
+    <div id="home">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-12 text-lg-start text-center">
+                    <h1>
+                        All-in-One Learning
+                        <p>Platform for Competitive <br> Exams </p>
+                    </h1>
+                    <h5>
+                        We Prepare Students For Entrance, Government And Commerce <br> Exams, As Well As Offering
+                        Personalized Tuition In Science And Commerce.
+                    </h5>
+                    <div class="d-flex justify-content-lg-start justify-content-center mt-4">
+                        <button id="btn2" class="me-3"><a href="./register.html"
+                                style="text-decoration: none; color: white;">REGISTER NOW-></a></button>
+                        <button id="btn2"><a href="#ABOUT" style="text-decoration: none; color: white;">ABOUT
+                                US-></a></button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 text-center">
+                    <img src="https://youthincmag.com/wp-content/uploads/2019/01/Coaching-classes.jpg"
+                        alt="Coaching Classes">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section class="about-us py-5" id="ABOUT">
+        <div class="container text-center">
+            <h2 class="mb-4 mt-5">About Us</h2>
+            <p class="lead">Welcome to Xylem, your gateway to high-quality, accessible, and engaging education. We
+                are committed to empowering learners worldwide with the tools they need to succeed.</p>
+        </div>
+    </section>
+
+    <!-- course details  -->
+    <div id="course">
+        <h2 class="mb-4 mt-5 text-center">COURSES IN DETAIL</h2>
+        <div class="row mt-3 mx-4 mb-5">
+            <div class="col-md-4 mt-4">
+                <div class="card shadow-sm">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231110115359/Roadmap-to-Mern-stack-developer-copy-(3).webp"
+                        class="card-img-top img-fluid" alt="Mission">
+                    <div class="card-body">
+                        <h5 class="card-title">ME(A)RN stack</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, placeat
+                            quis! A nemo libero deleniti adipisci repellendus inventore, quam cumque, cupiditate velit
+                            natus delectus at quis molestias commodi earum blanditiis. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card shadow-sm">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQHN0K7-vqBahA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1713072275892?e=2147483647&v=beta&t=1SfN-NolbD1vOi-FQ6FNlGhfMHpeW_PHg5Y9s7EQoKY"
+                        class="card-img-top img-fluid" alt="Vision">
+                    <div class="card-body">
+                        <h5 class="card-title">python FULL STACK</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime animi
+                            exercitationem dolor alias quibusdam, nisi aut distinctio, esse voluptatum ipsa eum vitae
+                            sint laborum mollitia natus iusto sequi et libero.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-4">
+                <div class="card shadow-sm">
+                    <img src="https://cdn.botpenguin.com/assets/website/Data_Science_9f02d17359.png"
+                        class="card-img-top img-fluid" alt="Vision">
+                    <div class="card-body">
+                        <h5 class="card-title">DATA science</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime animi
+                            exercitationem dolor alias quibusdam, nisi aut distinctio, esse voluptatum ipsa eum vitae
+                            sint laborum mollitia natus iusto sequi et libero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="bg-success text-light py-4">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>
+                        We are dedicated to providing quality education and resources to help
+                        students achieve their academic goals.
+                    </p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#course" class="text-light">Courses</a></li>
+                        <li><a href="#ABOUT" class="text-light">About Us</a></li>
+                        <li><a href="./contact.html" class="text-light">Contact</a></li>
+                        <li><a href="#home" class="text-light">Home</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>
+                        <i class="fas fa-envelope"></i> xylem@gmail.com<br>
+                        <i class="fas fa-phone"></i> +1 234 567 890
+                    </p>
+
+                    <div>
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+               <hr>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; 2024 xylem. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
